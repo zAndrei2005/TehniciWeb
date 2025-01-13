@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <link href="login.css" rel="stylesheet">
+    <div class="banner">
+        <a href="Abonamente.html">
+            <h>Abonamente</h>
+        </a>
+        <a href="Cluburi & Orar.html">
+            <h>Cluburi & Orar</h>
+        </a>
+        <a href="home.html">
+            <button><img src="logo.png" class="logo"></button>
+        </a>
+        <a href="Evenimente.html">
+            <h>Evenimente</h>
+        </a>
+        <a href="Locatii.html">
+            <h>Locatii</h>
+        </a>
+    </div>
+    <div class="form-container">
+        <h1>MaxPower Romania</h1>
+
+        <div id="login-section">
+            <h2>Autentificare</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="nume" for="username">Nume utilizator:</label>
+                    <input type="text" id="username" placeholder="Ex: utilizator123" required>
+                </div>
+                <div class="form-group">
+                    <label class="parola" for="password">Parolă:</label>
+                    <input type="password" id="password" placeholder="Introduceți parola" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- dupa login -->
+        <div id="dashboard-section" style="display: none;">
+            <h2>Bine ai venit, <span id="welcome-user"></span>!</h2>
+            <button id="logout-btn">Logout</button>
+
+            <h3>Oferte abonamente</h3>
+            <div id="offers"></div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <br><br><br><br>
+    <div class="cutie-neagra">
+        <figure class="vorbe">
+            <img src="logo.png" class="logo2">
+            <figcaption class="afirm">Motivatie<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disciplina<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ambitie</figcaption>
+        </figure>
+        <img src="iconitaf.png" class="poze">
+        <img src="inconitai.png" class="poze">
+        <img src="iconitat.png" class="poze">
+        <img src="iconitay.png" class="poze">
+        <h4>FII CEA MAI BUNA<br>&nbsp;&nbsp;&nbsp;VRESIUNE A TA</h4>
+    </div>
+    </body>
+</html>

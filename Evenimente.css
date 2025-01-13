@@ -1,0 +1,126 @@
+.banner{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width:100%;
+    height: 110px;
+    border-radius: 10px;
+}
+.logo{
+    position: relative;
+    height: 110px;
+    width: 200px;
+}
+h{
+    position: relative;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border-width: 0px;
+    border-color: black;
+}
+.primu{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+.tombola{
+    animation: tombola 5s linear infinite;
+    height: 17%;
+    width: 17%;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+h2{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+p1{
+    font-size: 23px;
+}
+.tombola-text{
+    width: 63%;
+}
+@keyframes tombola{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.doilea{
+    display: flex;
+    justify-content: center;
+    align-content: space-between; 
+}
+.clase-text{
+    width: 50%;
+}
+.om1, .om2, .om3{
+    width: 10%;
+    height: 20%;
+    margin-top: 10%;
+}
+.om1{
+    margin-left: 6%;
+}
+.om1, .om2, .om3{
+    animation: susjos 1s linear infinite;
+
+}
+@keyframes susjos{
+    0%{
+        transform: translateY(-80%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-80%);
+    }
+}
+.om2{
+    animation-delay: 0.33s;
+}
+.om3{
+    animation-delay:0.66s;
+}
+.cutie-neagra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: black;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.logo2{
+    height: 200px;
+    margin-right: 20px;
+}
+.poze{
+    height: 50px;
+}
+.vorbe{
+    color: yellow;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font: italic;
+}
+.afirm{
+    font-style: italic;
+}
+h4{
+    color: yellow;
+    font-size: 35px;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;    
+}

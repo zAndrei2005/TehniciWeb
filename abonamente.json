@@ -1,0 +1,5 @@
+[
+    { "tip": "Lunar", "durata": 1, "pret": 150 },
+    { "tip": "Trimestrial", "durata": 3, "pret": 400 },
+    { "tip": "Anual", "durata": 12, "pret": 1400 }
+]
