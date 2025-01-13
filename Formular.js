@@ -9,32 +9,6 @@ document.getElementById("gymForm").addEventListener("submit", function (event) {
     const membership = document.querySelector("input[name='membership']:checked").value;
     const difficulty = document.getElementById("slider").value;
 
-    const nameRegex = /^[a-zA-Z\s]+$/;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    let isValid = true;
-    let errors = "";
-
-    if (!nameRegex.test(name)) {
-        isValid = false;
-        errors += "Numele trebuie să conțină doar litere și spații.\n";
-    }
-
-    if (!emailRegex.test(email)) {
-        isValid = false;
-        errors += "Adresa de email este invalidă.\n";
-    }
-
-    if (!dob || new Date(dob) >= new Date()) {
-        isValid = false;
-        errors += "Data nașterii trebuie să fie validă și în trecut.\n";
-    }
-
-    if (!isValid) {
-        alert(errors);
-        return;
-    }
-
     const formData = { name, email, dob, experience, objectives, membership, difficulty };
     localStorage.setItem("gymFormData", JSON.stringify(formData));
     alert("Te-ai înscris cu succes la sală!"); //salv datele
